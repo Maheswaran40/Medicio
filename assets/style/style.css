@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0%;
+   scroll-behavior: smooth;
+}
+
+/* root-variable */
+
+:root {
+  --theme-color: #3fbbc0;
+}
+
+#time-div {
+  background-color: var(--theme-color);
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+#time-div span i {
+  padding-right: 10px;
+}
+.hero {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 34px;
+  padding-right: 100px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+#btn-nav {
+  display: none;
+}
+.hero-span span {
+  padding: 0 20px;
+}
+.hero-span a {
+    text-decoration: none;
+    color: black;
+}
+.hero-span {
+  margin-right: 20px;
+  font-size: x-large;
+  justify-content: space-between;
+}
+.hero button {
+  background-color: var(--theme-color);
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--theme-color);
+  border: none;
+  margin-left: 50px;
+  animation: btn1 1s infinite linear;
+  position: relative;
+
+}
+@keyframes btn1{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 10px;
+        
+    }
+    100%{
+        bottom: 0px;
+
+    }
+}
+.hero img {
+  height: 70px;
+  width: 250px;
+  margin-left: 50px;
+}
+
+.img-div {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-image: url("../imges/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#img-div-content {
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  bottom: 40px;
+  border-top: 10px solid #3fbbc0;
+  padding: 20px;
+  margin-left: 10%;
+}
+#img-div-content h1 {
+  text-align: center;
+  color: rgb(88, 88, 88);
+  margin-bottom: 30px;
+}
+#img-div-content p {
+  font-size: larger;
+  text-align: center;
+}
+
+.grid-1,
+.grid-2 {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  position: relative;
+  place-items: center;
+  align-items: center;
+}
+.grid-1 div {
+  background-color: white;
+  height: 200px;
+  width: 270px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.514);
+  margin-bottom: 10px;
+}
+
+.grid-1 div:hover,
+.grid-2 div:hover {
+  background-color: var(--theme-color);
+  color: white;
+}
+.grid-1 div:hover i,
+.grid-2 div:hover i {
+  color: white;
+}
+
+.grid-1-box {
+  padding: 5px;
+}
+
+.grid-1-box i {
+  margin-left: 10px;
+  margin-top: 15px;
+  color: var(--theme-color);
+}
+.grid-1-box h2 {
+  margin: 10px;
+  margin-top: 20px;
+}
+.grid-1-box p {
+  padding: 10px;
+}
+
+.assistence {
+  height: 200px;
+  background-color: #3fbbc0;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+.assistence > p {
+  padding-top: 30px;
+}
+.assistence > button {
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: var(--theme-color);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: medium;
+  font-family: "Times New Roman";
+}
+#btn3:hover {
+  background-color: white;
+  color: var(--theme-color);
+}
+
+/* About */
+
+.About {
+  padding-top: 20px;
+}
+
+.About p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: large;
+}
+.About > h1 {
+  text-align: center;
+  margin: 0;
+  height: 15px;
+  margin-bottom: 20px;
+}
+#orederd-list{
+  list-style: none;
+  padding-left: 0;
+}
+#orederd-list i{
+  margin-right: 10px;
+  color: var(--theme-color);
+}
+
+.about-whole {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  justify-content: space-evenly;
+  place-items: center;
+}
+#About-img {
+  width: 700px;
+  height: 500px;
+  position: relative;
+}
+#About-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.About-content {
+  width: 100%;
+  height: 500px;
+  line-height: 2;
+  position: relative;
+  right: 30px;
+}
+.About-content p {
+  text-align: justify;
+}
+
+.grid-2-box {
+  background-color: white;
+  height: 100px;
+  width: 200px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.514);
+  margin-bottom: 10px;
+  padding: 0px 20px;
+}
+.grid-2-box div {
+  padding-left: 20px;
+}
+
+.grid-2-box i {
+  color: var(--theme-color);
+}
+
+.grid-2-box {
+  display: flex;
+  align-items: center;
+}
+.service {
+  margin-top: 20px;
+}
+.service h1 {
+  text-align: center;
+}
+.service p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+.grid-3 {
+  margin: 0 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  place-items: center;
+  margin-top: 20px;
+}
+.grid-3-box {
+  height: 300px;
+  width: 400px;
+  place-items: center;
+}
+.grid-3-icon {
+  border-radius: 100%;
+  background-color: white;
+  color: var(--theme-color);
+  height: 120px;
+  width: 120px;
+  box-shadow: 1px 1px 10px black;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+.grid-3-icon p {
+  font-size: large;
+}
+.Appointment {
+  height: fit-content;
+  margin-top: 20px;
+  padding: 20px;
+}
+.Appointment h1 {
+  text-align: center;
+}
+.Appointment p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.grid-4 input,.grid-4 select {
+  margin: 20px 0;
+  width: 450px;
+  height: 50px;
+  border: 1px solid silver;
+}
+.grid-4 input::placeholder {
+  padding: 10px;
+}
+.grid-4 textarea {
+  width: 700px;
+  height: 100px;
+}
+#Appointment {
+  color: var(--theme-color);
+}
+.Appointment-subdiv {
+  display: grid;
+  place-items: center;
+}
+.Appointment-subdiv textarea {
+  width: 1530px;
+  margin-top: 10px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.Appointment-subdiv button {
+  height: 70px;
+  width: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: var(--theme-color);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: large;
+  font-family: "Times New Roman";
+}
+/* Doctors */
+
+.Doctors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  margin-top: 10px;
+}
+#dr-box1:hover #icon1{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
+#dr-box2:hover #icon2{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
+#dr-box3:hover #icon3{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
+#dr-box4:hover #icon4{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
+.dr-h1{
+  text-align: center;
+}
+#icon i:hover{
+  color: var(--theme-color);
+}
+.Doctors #icon{
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.dr-box {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  box-shadow: 1px 1px 10px black;
+}
+.dr-box img {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+}
+.dr-box h2 {
+  position: absolute;
+  left: 10px;
+  bottom: 80px;
+}
+.dr-box p {
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  text-align: justify;
+  padding: 0 10px 10px 10px;
+  font-size: large;
+  color: gray;
+}
+.contact p,
+.contact h1 {
+  text-align: center;
+}
+.contact p {
+  font-size: large;
+}
+iframe {
+  width: 98%;
+  height: 700px;
+  position: relative;
+  margin-left: 20px;
+}
+.cont-subdiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: fit-content;
+  place-items: center;
+}
+#locations {
+  width: 600px;
+}
+#locations i {
+  color: var(--theme-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 3px dotted var(--theme-color);
+}
+#con1 {
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+#con2 {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+#con3 {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+#message {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 700px;
+  height: fit-content;
+  place-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+  padding: 20px 0;
+}
+#message input {
+  width: 600px;
+  height: 40px;
+  border: 1px solid silver;
+}
+#message input::placeholder {
+  padding-left: 20px;
+}
+#message textarea::placeholder {
+  padding: 20px;
+}
+#message textarea {
+  width: 600px;
+  height: 130px;
+  border: 1px solid silver;
+}
+#message button {
+  height: 70px;
+  width: 250px;
+  /* margin-top: 20px; */
+  padding: 10px;
+  color: white;
+  background-color: var(--theme-color);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: large;
+  font-family: "Times New Roman";
+}
+#in-message {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 20px;
+  padding: 50px;
+}
+.footer-grid h2,.footer-grid h1 {
+  color: gray;
+}
+.footer-grid div {
+  line-height: 2;
+}
+.footer-grid p {
+  font-size: large;
+}
+.section-2 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.icon {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.icon i {
+  color: silver;
+  width: 30px;
+  height: 30px;
+  border: 1px solid silver;
+  border-radius: 100%;
+  padding: 10px;
+}
+.icon i:hover {
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+}
+.section-6 {
+  place-items: center;
+  font-size: larger;
+  line-height: 2;
+  margin-top: 20px;
+}
+hr {
+  width: 1500px;
+}
+#top-nav a{
+  height: 50px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: var(--theme-color);
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  border: none;
+  box-shadow: 1px 1px 10px var(--theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: btn 1s infinite linear;
+  text-decoration: none;
+}
+@keyframes btn{
+    0%{
+        bottom: 50px;
+    }
+    50%{
+        bottom: 60px;
+
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+#top-nav i{
+    color: white;
+}
+
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+/* mobiles */
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 425px;
+  }
+  #time-div {
+    justify-content: center;
+    padding: 0;
+    width: 425px;
+  }
+  #time-div-span1 {
+    display: none;
+  }
+
+  .hero {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    width: 425px;
+  }
+  .hero img {
+    height: 50px;
+    width: 100px;
+    margin-left: 15px;
+  }
+  .hero-span span {
+    display: none;
+  }
+  .hero-span {
+    margin-left: 0;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    width: 425px;
+  }
+  #btn2 {
+    margin-left: 30px;
+  }
+  #btn-nav {
+    height: 20px;
+    width: 30px !important;
+    display: block;
+    color: red;
+    margin-left: 30px;
+  }
+  .img-div {
+    width: 425px;
+  }
+  #img-div-content {
+    margin-left: 5%;
+    overflow: scroll;
+  }
+
+  .grid-1 {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+    height: 1000px;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    height: fit-content;
+    margin-bottom: 15px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: 0;
+    padding-right: 0;
+    height: fit-content;
+  }
+  .grid-3-box {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+  .grid-4 input {
+    width: 350px;
+  }
+  .grid-4 select{
+    width: 350px;
+
+  }
+  .Appointment-subdiv textarea {
+    width: 350px;
+  }
+
+  .gr .assistence {
+    width: 425px;
+  }
+  .about-whole {
+    grid-template-columns: 1fr;
+    height: 1260px;
+  }
+  #About-img {
+    width: 400px;
+  }
+  .About-content {
+    width: 400px;
+    height: 800px;
+    right: 0;
+  }
+  .About-content ol {
+    margin-left: 20px;
+  }
+  iframe {
+    margin: 0;
+  }
+  .Doctors {
+    width: 400px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+    margin-left: 20px;
+  }
+  .cont-subdiv {
+    grid-template-columns: 1fr;
+    width: 400px;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+  }
+  #locations {
+    width: 400px;
+    position: inherit;
+    left: 10px;
+  }
+  #con1 {
+    width: 400px;
+  }
+  #message {
+    width: 400px;
+  }
+  #message input,
+  #message textarea {
+    width: 350px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 10px;
+    padding: 0;
+  }
+  hr {
+    width: 400px;
+  }
+  footer {
+    width: 420px;
+  }
+}
+
+/* tablets ___________________________________________________________*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  #time-div {
+    justify-content: center;
+  }
+  #time-div-span1 {
+    display: none;
+  }
+  .hero-span span {
+    display: none;
+  }
+  .hero {
+    padding: 0;
+    align-items: center;
+    display: flex;
+  }
+  .hero-span {
+    margin-left: 0;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    width: 425px;
+  }
+  #btn-nav {
+    height: 20px;
+    width: 30px !important;
+    display: block;
+    color: red;
+    margin-left: 65px;
+  }
+  .hero img {
+    margin: 20px;
+  }
+  .grid-1 {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+    height: 435px;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 760px;
+  }
+  .grid-3-box {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+  }
+  .grid-4 input {
+    width: 300px;
+  }
+   .grid-4 select{
+    width: 300px;
+
+  }
+  .Appointment-subdiv textarea {
+    width: 650px;
+  }
+  .assistence {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .About {
+    height: 1220px;
+  }
+  .about-whole {
+    grid-template-columns: 1fr;
+  }
+  .About-content {
+    width: 740px;
+    height: 600px;
+    right: 0;
+    padding: 20px 20px;
+  }
+  .About-content ol {
+    margin-left: 20px;
+  }
+  .Doctors {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 700px;
+    margin-left: 20px;
+  }
+  .cont-subdiv {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 10px;
+    padding: 0;
+  }
+  hr {
+    width: 700px;
+  }
+  footer {
+    width: 760px;
+  }
+  iframe {
+    margin-left: 10px;
+  }
+}
